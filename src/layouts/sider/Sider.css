@@ -1,0 +1,37 @@
+/* src/styles/SiderContent.css */
+
+.sider {
+  background-color: #f0f0f0;
+  height: 100vh;
+  position: fixed;
+  overflow: auto;
+  transition: all 0.3s ease;
+}
+
+/* Mặc định, chiều rộng của Sider */
+.sider {
+  width: 100%;
+}
+
+/* Responsive cho màn hình lớn hơn 1024px */
+@media (min-width: 1024px) {
+  .sider {
+    width: 200px;
+  }
+}
+
+/* Responsive cho màn hình từ 768px đến 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sider {
+    width: 180px;
+    display: none !important;
+  }
+}
+
+/* Responsive cho màn hình nhỏ hơn 768px */
+@media (max-width: 767px) {
+  .sider {
+    width: 100%;
+    display: none !important;
+  }
+}

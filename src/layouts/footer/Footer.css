@@ -1,0 +1,16 @@
+/* footerStyle.css */
+.footer {
+  width: 100%;
+  margin: 0 auto; /* Đảm bảo footer căn giữa */
+  text-align: center; /* Căn giữa nội dung trong footer */
+  position: relative; /* Đảm bảo footer không bị kéo dài hoặc lệch */
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  /* Thêm các chỉnh sửa cho mobile nếu cần */
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
