@@ -6,7 +6,7 @@ const Products = () => {
       <div className="row g-3 te">
         {" "}
         {/* Giao diện dạng lưới, với khoảng cách giữa các cột */}
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
           <ProductCard
             imgSrc="https://via.placeholder.com/150"
             title="Sản phẩm A"
@@ -15,7 +15,7 @@ const Products = () => {
             datePost={new Date()}
           />
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
           <ProductCard
             imgSrc="https://via.placeholder.com/150"
             title="Sản phẩm B"
@@ -24,7 +24,7 @@ const Products = () => {
             datePost={new Date()}
           />
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
           <ProductCard
             imgSrc="https://via.placeholder.com/150"
             title="Sản phẩm C"
@@ -33,7 +33,7 @@ const Products = () => {
             datePost={new Date()}
           />
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
           <ProductCard
             imgSrc="https://via.placeholder.com/150"
             title="Sản phẩm D"

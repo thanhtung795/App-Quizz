@@ -22,7 +22,7 @@ const CarouselContent: React.FC<CarouselContentProps> = ({
           {title}
         </h1>
         <p
-          className="title-content w-75"
+          className="des-content w-75"
           style={{
             textAlign: "left",
           }}
@@ -30,12 +30,9 @@ const CarouselContent: React.FC<CarouselContentProps> = ({
           {description}
         </p>
 
-        <Button className="title-content">{buttonText}</Button>
+        <Button className="btn-content">{buttonText}</Button>
       </div>
-      <div
-        className="content-img img-fluid"
-        style={{ width: "300px", textAlign: "center" }}
-      >
+      <div className="content-img img-fluid">
         <img src={imgSrc} className="w-100" alt="" />
       </div>
     </div>

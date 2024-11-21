@@ -1,4 +1,97 @@
 .css-dev-only-do-not-override-49qm {
   border-radius: 20px !important; /* Bo góc */
   overflow: hidden;
+}/* Mobile nhỏ (dưới 480px) */
+@media (max-width: 480px) {
+  .title-content {
+    font-size: 16px;
+  }
+  .des-content {
+    font-size: 12px;
+  }
+  .btn-content {
+    font-size: 14px;
+  }
+
+  .content-img {
+    width: 600px;
+  }
+  .title-parent{
+    font-size: 23px;
+  }
+}
+
+/* Mobile lớn (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .title-content {
+    font-size: 20px;
+  }
+  .des-content {
+    font-size: 14px;
+  }
+  .btn-content {
+    font-size: 16px;
+  }
+
+  .content-img {
+    width: 550px;
+  }
+  .title-parent{
+    font-size: 28px;
+  }
+}
+
+/* Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title-content {
+    font-size: 18px;
+  }
+  .des-content {
+    font-size: 14px;
+  }
+  .btn-content {
+    font-size: 14px;
+  }
+
+  .content-img {
+    width: 70vw;
+  }
+
+  .title-parent{
+    font-size: 33px;
+  }
+}
+
+/* Laptop (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .title-content {
+    font-size: 24px;
+  }
+  .des-content {
+    font-size: 20px;
+  }
+  .btn-content {
+    font-size: 20px;
+  }
+
+  .content-img {
+    width: 350px;
+  }
+}
+
+/* PC màn hình lớn (trên 1441px) */
+@media (min-width: 1441px) {
+  .title-content {
+    font-size: 20px;
+  }
+  .des-content {
+    font-size: 18px;
+  }
+  .btn-content {
+    font-size: 16px;
+  }
+
+  .content-img {
+    width: 400px;
+  }
 }

@@ -1,30 +1,40 @@
 // src/App.tsx
+import  { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { routes } from "./routes/routes"; // Import danh sách route từ routes.ts
-import { Layout } from "antd";
+import { Layout,  } from "antd";
 import { Content, Footer, Header } from "antd/es/layout/layout";
 import HeaderContent from "./layouts/header/HeaderContent";
 import { contentStyle, footerStyle, headerStyle, layoutStyle } from "./style";
 import FooterContent from "./layouts/footer/Footer";
-import Sider from "antd/es/layout/Sider";
 import SiderContent from "./layouts/sider/Sider";
+import "./App.css";
 
 function App() {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const headerHeight = document.querySelector("header")?.getBoundingClientRect().height || 0;
+      const isScrollTop = window.scrollY > headerHeight;
+      setIsFixed(isScrollTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Router>
-      <Layout style={layoutStyle}>
-        <Header style={headerStyle}>
+      <Layout  style={layoutStyle}>
+        <Header  className={isFixed ? "position-fixed" : ""} style={headerStyle}>
           <HeaderContent />
         </Header>
-        <Layout style={{ display: "flex" }}>
-          <Sider
-            width={200}
-            breakpoint="lg" // Khi màn hình nhỏ hơn breakpoint này, Sider sẽ tự động ẩn
-            collapsedWidth="0" // Khi thu nhỏ, Sider sẽ thu hẹp
-            style={{ marginTop: "140px", backgroundColor: "#f0f0f0" }}
-          >
-            <SiderContent /> {/* Sử dụng SiderContent trong Sider */}
-          </Sider>
+        <Layout style={{ display: "flex" }}>  
+            <SiderContent isFixed={isFixed} /> {/* Sử dụng SiderContent trong Sider */}
           <Content style={contentStyle}>
             <Routes>
               {routes.map((route, index) => (

@@ -1,16 +1,68 @@
-/* footerStyle.css */
 .footer {
-  width: 100%;
-  margin: 0 auto; /* Đảm bảo footer căn giữa */
-  text-align: center; /* Căn giữa nội dung trong footer */
-  position: relative; /* Đảm bảo footer không bị kéo dài hoặc lệch */
-  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  height: 300px;
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
+
+.list-Group-footer{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.list-Group-footer li{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.list-Group-footer li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.list-Group-footer li a:hover{
+   text-decoration: underline;
+}
+/* Mobile devices */
 @media (max-width: 768px) {
-  /* Thêm các chỉnh sửa cho mobile nếu cần */
   .footer {
     padding: 10px;
     font-size: 14px;
+  }
+  .list-Group-footer li{
+    margin-bottom: 10px;
+    font-size: 9px;
+  }
+  .title-list-Groupp{
+    font-size: 11px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .list-Group-footer li{
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .title-list-Groupp{
+    font-size: 13px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+  .footer {
+    padding: 20px;
+    font-size: 18px;
+  }
+  .list-Group-footer li{
+    margin-bottom: 10px;
+    font-size: 16px;
   }
 }
