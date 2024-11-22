@@ -1,3 +1,6 @@
 .css-dev-only-do-not-override-49qm {
-    border-radius: 5px !important;
+    border-radius: 10px !important;
+}
+a{
+    text-decoration: none !important;
 }

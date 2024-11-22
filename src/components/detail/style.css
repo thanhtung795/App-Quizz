@@ -1,0 +1,24 @@
+.related-question-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .related-question-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .related-question-card .info h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .related-question-card .info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  

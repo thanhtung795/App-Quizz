@@ -1,10 +1,10 @@
 import { Carousel } from "antd";
 import "./Bamner.css";
 import CarouselContent from "./CarouselContent";
-import imgBamner1 from "../../../assets/imgBamner1.png";
-import imgBamner2 from "../../../assets/imgBamner2.png";
-import imgBamner3 from "../../../assets/imgBamner3.png";
-import imgBamner4 from "../../../assets/imgBamner4.png";
+import imgBamner1 from "../../assets/imgBamner1.png";
+import imgBamner2 from "../../assets/imgBamner2.png";
+import imgBamner3 from "../../assets/imgBamner3.png";
+import imgBamner4 from "../../assets/imgBamner4.png";
 
 const settings = {
   dots: true,
