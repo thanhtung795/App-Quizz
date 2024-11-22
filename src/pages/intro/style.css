@@ -1,0 +1,141 @@
+.main-intro {
+  height: 500px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+.question-detail {
+  margin: 5px;
+  min-height: 150px;
+  height: 400px;
+  border: none;
+  border-radius: 15px;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Ẩn nội dung tràn */
+}
+
+.question-title {
+  font-size: 1.5rem;
+  color: #2d3748;
+  line-height: 1.6;
+  font-weight: 600;
+  margin: 0;
+  max-height: 100%;
+  overflow-y: auto; /* Cho phép cuộn dọc */
+  padding-right: 10px; /* Tạo khoảng trống cho thanh cuộn */
+  scrollbar-width: thin; /* Style cho Firefox */
+  scrollbar-color: #4299e1 #f0f0f0; /* Màu thanh cuộn cho Firefox */
+}
+
+/* Style cho thanh cuộn trên Chrome, Edge, và Safari */
+.question-title::-webkit-scrollbar {
+  width: 6px;
+}
+
+.question-title::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+.question-title::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+}
+
+.question-title::-webkit-scrollbar-thumb:hover {
+  background: #3182ce;
+}
+
+.box-Answer {
+  border: none;
+  border-radius: 15px;
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.button-Answer {
+  display: grid;
+  gap: 1.5rem;
+  height: 410px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.answer-btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(66, 153, 225, 0.3);
+  overflow-y: auto; /* Kích hoạt cuộn dọc */
+  max-height: 100px; /* Đặt chiều cao cố định */
+  word-break: break-word; /* Ngắt từ nếu quá dài */
+  scrollbar-width: thin; /* Thanh cuộn nhỏ (Firefox) */
+  scrollbar-color: #3182ce #e2e8f0; /* Màu thanh cuộn (Firefox) */
+}
+
+/* Tùy chỉnh thanh cuộn (Chrome, Edge, Safari) */
+.answer-btn::-webkit-scrollbar {
+  width: 8px; /* Độ rộng thanh cuộn */
+}
+
+.answer-btn::-webkit-scrollbar-thumb {
+  background: #3182ce; /* Màu thanh kéo */
+  border-radius: 10px; /* Bo góc thanh kéo */
+}
+
+.answer-btn::-webkit-scrollbar-track {
+  background: #e2e8f0; /* Màu nền thanh cuộn */
+  border-radius: 10px; /* Bo góc nền thanh cuộn */
+}
+
+.answer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(66, 153, 225, 0.4);
+}
+
+.answer-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(66, 153, 225, 0.4);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .button-Answer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .main-intro {
+    height: auto;
+    margin: 10px;
+    padding: 1rem;
+  }
+
+  .question-title {
+    font-size: 1.2rem;
+  }
+  .question-detail {
+    max-height: 180px;
+    padding: 1.5rem;
+  }
+
+  .question-title {
+    font-size: 1.2rem;
+  }
+  .answer-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
